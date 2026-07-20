@@ -1,0 +1,21 @@
+{
+  "name": "engse203-student-labs-685432100574",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtGTR/engse203-student-labs-685432100574.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ArtGTR/engse203-student-labs-685432100574/issues"
+  },
+  "homepage": "https://github.com/ArtGTR/engse203-student-labs-685432100574#readme"
+}
