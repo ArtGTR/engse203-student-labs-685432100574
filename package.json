@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ArtGTR/engse203-student-labs-685432100574/issues"
   },
-  "homepage": "https://github.com/ArtGTR/engse203-student-labs-685432100574#readme"
+  "homepage": "https://github.com/ArtGTR/engse203-student-labs-685432100574#readme",
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
 }
