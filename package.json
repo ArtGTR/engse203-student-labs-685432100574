@@ -20,5 +20,9 @@
   "homepage": "https://github.com/ArtGTR/engse203-student-labs-685432100574#readme",
   "devDependencies": {
     "supertest": "^7.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
   }
 }
