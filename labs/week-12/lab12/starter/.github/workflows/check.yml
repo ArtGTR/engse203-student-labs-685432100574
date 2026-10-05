@@ -1,0 +1,40 @@
+name: Week 12 Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: labs/week-12/lab12/starter
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: labs/week-12/lab12/starter/api/package-lock.json
+
+      - name: Install API dependencies
+        run: npm ci
+        working-directory: labs/week-12/lab12/starter/api
+
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: labs/week-12/lab12/starter/frontend
+
+      - name: Run API tests
+        run: npm test
+        working-directory: labs/week-12/lab12/starter/api
+
+      - name: Run frontend tests
+        run: npm test
+        working-directory: labs/week-12/lab12/starter/frontend
